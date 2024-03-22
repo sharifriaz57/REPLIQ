@@ -1,3 +1,4 @@
+
 import Categories from "./components/Categories";
 import FeaturedProducts from "./components/FeaturedProducts";
 import Footer from "./components/Footer";
@@ -5,6 +6,8 @@ import Header from "./components/Header";
 import HomeCarousel from "./components/HomeCarousel";
 
 export default function Home() {
+
+
 	return (
 		<main className="min-h-screen bg-slate-200">
 			<Header />
