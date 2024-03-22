@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className='bg-green-100 py-16'>
         <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-auto">
-            <Link href={`/`} className='text-3xl text-green-500 font-bold'>REPLIQ</Link>
+            <Link href={`/`} className='text-3xl text-primary font-bold'>REPLIQ</Link>
 
             <div className=''>
                 <h5 className="text-lg font-medium capitalize text-black">Important Links</h5>

@@ -1,5 +1,6 @@
 "use client"
 import { AppRequest } from "@/http/AxiosCall";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const Categories = () => {
@@ -20,9 +21,9 @@ const Categories = () => {
     return (
         <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {categories.map(category => (
-                <div className="bg-white px-4 py-6 rounded-md">
+                <Link href={`/product-list/${category}`} className="bg-white px-4 py-6 rounded-md">
                     <h5 className="text-lg text-center font-medium uppercase">{category}</h5>
-                </div>
+                </Link>
             ))}
         </div>
     )

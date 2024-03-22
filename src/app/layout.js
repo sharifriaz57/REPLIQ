@@ -118,9 +118,11 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body className={inter.className}>
-				<AppContext.Provider value={{ appData, setAppData, handleCart, removeFromCart, clearCart }}>
-					{children}
-				</AppContext.Provider>
+				<main className="min-h-screen bg-slate-200">
+					<AppContext.Provider value={{ appData, setAppData, handleCart, removeFromCart, clearCart }}>
+						{children}
+					</AppContext.Provider>
+				</main>
 			</body>
 		</html>
 	);

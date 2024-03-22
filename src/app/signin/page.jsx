@@ -77,7 +77,7 @@ const Signin = () => {
                     <h2 className="mt-1 mb-1 md:mb-3 text-center text-2xl md:text-3xl font-bold leading-9 tracking-tight text-gray-900">Welcome to REPLIQ.</h2>
                     <div className="text-center text-slate-500">
                         Don't have an account?
-                        <Link href="/signup" className="font-semibold text-green-500 inline-block ms-1">Create Account</Link>
+                        <Link href="/signup" className="font-semibold text-primary inline-block ms-1">Create Account</Link>
                     </div>
                 </div>
 
@@ -96,7 +96,7 @@ const Signin = () => {
                                         value={formData.phone}
                                         onChange={setForm}
                                         required
-                                        className="block w-full h-8 rounded-md border-0 px-2 py-2 text-gray-900 shadow-sm outline-0 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-500 sm:text-sm sm:leading-4"
+                                        className="block w-full h-8 rounded-md border-0 px-2 py-2 text-gray-900 shadow-sm outline-0 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-4"
                                     />
                                 </div>
                                 {validation.phone && <div className="text-sm text-red-500 leading-loose">Must provide phone number</div>}
@@ -116,7 +116,7 @@ const Signin = () => {
                                         value={formData.password}
                                         onChange={setForm}
                                         required
-                                        className="block w-full h-8 rounded-md border-0 px-2 py-2 pr-10 text-gray-900 shadow-sm outline-0 ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-500 sm:text-sm sm:leading-6"
+                                        className="block w-full h-8 rounded-md border-0 px-2 py-2 pr-10 text-gray-900 shadow-sm outline-0 ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6"
                                     />
                                     <span className="cursor-pointer absolute right-3 top-1/2 -translate-y-1/2" onClick={() => setIsPassVisible(prev => !prev)}>
                                         {isPassVisible
@@ -130,7 +130,7 @@ const Signin = () => {
 
                             <button
                                 type="submit"
-                                className="flex w-full justify-center rounded-md bg-green-500 px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-green-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500"
+                                className="flex w-full justify-center rounded-md bg-primary px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                                 onClick={submitForm}
                             >
                                 Sign In

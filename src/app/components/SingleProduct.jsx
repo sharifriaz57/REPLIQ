@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-const SingleProduct = ({product}) => {
+const SingleProduct = ({ product }) => {
     return (
-        <Link href={`/`} className="bg-white rounded-lg">
+        <Link href={`/product/${product.id}`} className="bg-white rounded-lg">
             <div className='w-full pt-full relative mb-2'>
                 <Image src={product.thumbnail} alt='product-img' className="rounded-t-lg" layout='fill' objectFit='cover' />
             </div>

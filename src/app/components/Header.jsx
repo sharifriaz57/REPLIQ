@@ -10,7 +10,7 @@ import { FiLogOut } from "react-icons/fi";
 
 const Header = () => {
     const { appData, setAppData } = useContext(AppContext);
-    const { user } = appData;
+    const { user, carts } = appData;
 
     const handleLogout = () =>{
         signOut(auth)
@@ -32,7 +32,7 @@ const Header = () => {
     return (
         <div className='w-full bg-white py-3'>
             <div className="container flex items-center justify-between mx-auto">
-                <Link href={`/`} className='text-3xl text-green-500 font-bold'>REPLIQ</Link>
+                <Link href={`/`} className='text-3xl text-primary font-bold'>REPLIQ</Link>
 
                 <div className='flex gap-x-6'>
                     <div className='flex gap-3'>
@@ -45,7 +45,12 @@ const Header = () => {
                         </Link>
                     </div>
                     
-                    <BsCart3 className='text-2xl' />
+                    <div className="relative cursor-pointer" onClick={() => setIsCartOpen(true)}>
+                        <BsCart3 className='text-2xl' />
+                        {carts.totalProducts > 0 &&
+                            <span className="w-5 h-5 absolute -top-2 left-4 -translate-x-1/2 flex items-center justify-center rounded-full bg-primary text-white text-sm font-semibold">{carts.totalProducts}</span>
+                        }
+                    </div>
                 </div>
             </div>
         </div>
