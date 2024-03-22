@@ -8,9 +8,9 @@ const SingleProduct = ({ product }) => {
                 <Image src={product.thumbnail} alt='product-img' className="rounded-t-lg" layout='fill' objectFit='cover' />
             </div>
             <div className="p-3">
-                <h5 className="text-lg font-medium capitalize text-black">{product.title}</h5>
+                <h5 className="text-lg font-medium capitalize text-black leading-snug">{product.title}</h5>
                 <p className="text-sm text-slate-400 capitalize mb-2">{product.category}</p>
-                <p className="text-base text-slate-600">${product.price}</p>
+                <p className="text-lg font-bold text-secondary">${product.price}</p>
             </div>
         </Link>
     )

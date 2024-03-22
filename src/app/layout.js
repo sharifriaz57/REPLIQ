@@ -22,16 +22,8 @@ export default function RootLayout({ children }) {
 			totalQuantity: 0
 		},
 	}
-	const [appData, setAppData] = useState(initState);
-	console.log(appData);
-
-	useEffect(() => {
-		const storedState = localStorage.getItem('appData');
-		console.log("sto",storedState);
-		if (storedState) {
-			setAppData(JSON.parse(storedState));
-		}
-	}, [])
+	const [appData, setAppData] = useState(localStorage.getItem('appData') 
+												? JSON.parse(localStorage.getItem('appData')) : initState);
 
 	useEffect(() => {
 		localStorage.setItem('appData', JSON.stringify(appData));

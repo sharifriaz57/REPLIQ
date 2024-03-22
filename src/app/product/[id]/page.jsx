@@ -1,5 +1,4 @@
 "use client"
-import Header from "@/app/components/Header";
 import { AppContext } from "@/context/AppContext";
 import { AppRequest } from "@/http/AxiosCall";
 import Image from "next/image";
@@ -30,9 +29,7 @@ const page = () => {
 
     return (
         <>
-            <Header />
-
-            <div className="container grid grid-cols-1 lg:grid-cols-2 py-10 mx-auto">
+            <div className="container grid grid-cols-1 lg:grid-cols-2 py-10 mb-10 mx-auto">
                 <div className='col-span-1 relative overflow-hidden'>
                     <Image src={product.thumbnail} alt='product-img' layout='fill' objectFit='cover' />
                 </div>

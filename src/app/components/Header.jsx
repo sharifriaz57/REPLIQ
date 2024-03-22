@@ -45,12 +45,12 @@ const Header = () => {
                         </Link>
                     </div>
                     
-                    <div className="relative cursor-pointer" onClick={() => setIsCartOpen(true)}>
+                    <Link href={'/cart'} className="relative cursor-pointer">
                         <BsCart3 className='text-2xl' />
                         {carts.totalProducts > 0 &&
                             <span className="w-5 h-5 absolute -top-2 left-4 -translate-x-1/2 flex items-center justify-center rounded-full bg-primary text-white text-sm font-semibold">{carts.totalProducts}</span>
                         }
-                    </div>
+                    </Link>
                 </div>
             </div>
         </div>
