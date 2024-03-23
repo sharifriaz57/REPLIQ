@@ -77,7 +77,7 @@ const Signup = () => {
                     <h2 className="mt-1 mb-1 md:mb-3 text-center text-2xl md:text-3xl font-bold leading-9 tracking-tight text-gray-900">Welcome to REPLIQ.</h2>
                     <div className="text-center text-slate-500">
                         Already have an account?
-                        <Link href="/signup" className="font-semibold inline-block text-primary ms-1">Sign in</Link>
+                        <Link href="/signin" className="font-semibold inline-block text-primary ms-1">Sign in</Link>
                     </div>
                 </div>
 

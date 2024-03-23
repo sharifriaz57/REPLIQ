@@ -1,7 +1,6 @@
 import axios from "axios";
 
 const prefix = `https://dummyjson.com`;
-// axios.defaults.headers.common['Authorization'] = `Bearer ${`se84@848768/af3546f7af`}`;
 
 export const AppRequest = {
     AxiosGet: async (url = '/') => {
