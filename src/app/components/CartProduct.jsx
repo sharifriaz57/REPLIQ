@@ -10,7 +10,7 @@ const CartProduct = ({ product }) => {
     const {  removeFromCart } = useContext(AppContext);
 
     return (
-        <Link href={`/products/${product.id}`} className={`flex items-center p-2 sm:p-4 gap-2 sm:gap-3 bg-white rounded-lg cursor-pointer`}>
+        <Link href={`/product/${product.id}`} className={`flex items-center p-2 sm:p-4 gap-2 sm:gap-3 bg-white rounded-lg cursor-pointer`}>
             <button className='h-7 w-7 shrink-0 rounded-full flex items-center justify-center border border-slate-400
                 transition duration-300 ease-in-out text-red-400 hover:bg-red-500 hover:text-white'
                 onClick={() => removeFromCart(product)}

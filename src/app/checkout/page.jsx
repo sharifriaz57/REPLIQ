@@ -28,19 +28,19 @@ const page = () => {
 						<div className='grid grid-cols-2 gap-5'>
 							<div>
 								<label htmlFor="" className='text-sm font-semibold inline-block mb-2'>First Name <span className='text-red-500'>*</span></label>
-								<input type='text' className='w-full h-10 p-3 outline-none border-1 text-gray-700 ring-transparent ring-1 focus:ring-primary' />
+								<input type='text' className='w-full h-10 p-3 bg-white outline-none border-1 text-gray-700 ring-transparent ring-1 focus:ring-primary' />
 							</div>
 							<div>
 								<label htmlFor="" className='text-sm font-semibold inline-block mb-2'>Last Name <span className='text-red-500'>*</span></label>
-								<input type='text' className='w-full h-10 p-3 outline-none border-1 text-gray-700 ring-transparent ring-1 focus:ring-primary' />
+								<input type='text' className='w-full h-10 p-3 bg-white outline-none border-1 text-gray-700 ring-transparent ring-1 focus:ring-primary' />
 							</div>
 							<div className='col-span-2'>
 								<label htmlFor="" className='text-sm font-semibold inline-block mb-2'>Address <span className='text-red-500'>*</span></label>
-								<input type='text' className='w-full h-10 p-3 outline-none border-1 text-gray-700 ring-transparent ring-1 focus:ring-primary' />
+								<input type='text' className='w-full h-10 p-3 bg-white outline-none border-1 text-gray-700 ring-transparent ring-1 focus:ring-primary' />
 							</div>
 							<div className=''>
 								<label htmlFor="" className='text-sm font-semibold inline-block mb-2'>District <span className='text-red-500'>*</span></label>
-								<select name="" id="" className='w-full h-10 px-3 outline-none border-1 text-gray-700 ring-transparent ring-1 focus:ring-primary'>
+								<select name="" id="" className='w-full h-10 px-3 bg-white outline-none border-1 text-gray-700 ring-transparent ring-1 focus:ring-primary'>
 									<option value="1">Chattogram</option>
 									<option value="2">Dhaka</option>
 									<option value="3">Barishal</option>
@@ -49,15 +49,15 @@ const page = () => {
 							</div>
 							<div className=''>
 								<label htmlFor="" className='text-sm font-semibold inline-block mb-2'>ZIP Code</label>
-								<input type='number' className='w-full h-10 p-3 outline-none border-1 text-gray-700 ring-transparent ring-1 focus:ring-primary' />
+								<input type='number' className='w-full h-10 p-3 bg-white outline-none border-1 text-gray-700 ring-transparent ring-1 focus:ring-primary' />
 							</div>
 							<div className=''>
 								<label htmlFor="" className='text-sm font-semibold inline-block mb-2'>Email <span className='text-red-500'>*</span></label>
-								<input type='email' className='w-full h-10 p-3 outline-none border-1 text-gray-700 ring-transparent ring-1 focus:ring-primary' />
+								<input type='email' className='w-full h-10 p-3 bg-white outline-none border-1 text-gray-700 ring-transparent ring-1 focus:ring-primary' />
 							</div>
 							<div className='col-span-2'>
 								<label htmlFor="" className='text-sm font-semibold inline-block mb-2'>Notes (Additional)</label>
-								<input type='text' className='w-full h-10 p-3 outline-none border-1 text-gray-700 ring-transparent ring-1 focus:ring-primary' />
+								<input type='text' className='w-full h-10 p-3 bg-white outline-none border-1 text-gray-700 ring-transparent ring-1 focus:ring-primary' />
 							</div>
 						</div>
 					</div>
