@@ -74,6 +74,7 @@ const page = () => {
 							<th>Phone</th>
 							<th>Birth Date</th>
 							<th>Address</th>
+							<th>Actions</th>
 						</tr>
 					</tfoot>
 				</table>

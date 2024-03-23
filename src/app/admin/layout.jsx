@@ -1,7 +1,7 @@
 "use client"
 import { AdminContext } from "@/context/AdminContext"
 import Link from "next/link"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import AdminHeader from "./components/AdminHeader"
 
 const layout = ({ children }) => {
@@ -9,7 +9,19 @@ const layout = ({ children }) => {
 		isSidebarOpen: true,
 	}
 	const [adminData, setAdminData] = useState(initState); 
-    console.log(adminData);
+
+    const collapseOnResize = () =>{
+        if (window.innerWidth < 992) {
+            setAdminData(prev => ({...prev, isSidebarOpen: false}))
+        } 
+    }
+    
+    useEffect(() => {
+        collapseOnResize();
+        window.addEventListener('resize', collapseOnResize);
+
+        return () => window.removeEventListener('resize', collapseOnResize)
+    }, [])
 
     return (
         <AdminContext.Provider value={{ adminData, setAdminData }}>
@@ -29,6 +41,15 @@ const layout = ({ children }) => {
                                 <ul>
                                     <li><Link href={`/admin/customer/create`}>Add</Link></li>
                                     <li><Link href={`/admin/customer/list`}>List</Link></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Product</summary>
+                                <ul>
+                                    <li><Link href={`/admin/product/create`}>Add</Link></li>
+                                    <li><Link href={`/admin/product/list`}>List</Link></li>
                                 </ul>
                             </details>
                         </li>
